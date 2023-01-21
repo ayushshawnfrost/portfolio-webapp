@@ -83,7 +83,7 @@ const Contact = () => {
         <Route path="/2" element={<SoftwareEngineer />} />
         <Route path="/3" element={<Intern />} />
       </Routes> */}
-      <Tabs value={index} onChange={handleChange} centered textColor="white" variant="fullWidth"
+      <Tabs value={index} onChange={handleChange} centered textColor="inherit" variant="fullWidth"
         indicatorColor="secondary">
         <Tab label="Senior Software Engineer"></Tab>
         <Tab label="Software Engineer"></Tab>

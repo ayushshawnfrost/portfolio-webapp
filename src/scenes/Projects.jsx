@@ -1,5 +1,7 @@
 import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
+import proj1 from "../assets/1.png";
+import proj2 from "../assets/2.png";
 
 const container = {
   hidden: {},
@@ -19,7 +21,7 @@ const Project = ({ title, href, desc, img }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
     bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
   const projectTitle = title.split(" ").join("-").toLowerCase();
-
+  
   return (
     <motion.div variants={projectVariant} className="relative mt-5">
       <a className="flex justify-center" href={href}>
@@ -29,7 +31,8 @@ const Project = ({ title, href, desc, img }) => {
             {desc}
           </p>
         </div>
-        <img src={`../assets/${img}.png`} alt={projectTitle} />
+        {img ==="1" &&<img src={proj1} alt={projectTitle} />}
+        {img ==="2" &&<img src={proj2} alt={projectTitle} />}
       </a>
     </motion.div>
   );

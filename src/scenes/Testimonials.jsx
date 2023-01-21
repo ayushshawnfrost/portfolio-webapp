@@ -27,7 +27,7 @@ const Testimonials = () => {
       </motion.div>
 
       {/* TESTIMONIALS */}
-      <div className="md:flex md:justify-between gap-8">
+      {/* <div className="md:flex md:justify-between gap-8">
         <motion.div
           className="mx-auto relative bg-blue max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48
             before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person1"
@@ -82,7 +82,7 @@ const Testimonials = () => {
             Fames odio in at. At magna ornare dictum lectus.
           </p>
         </motion.div>
-      </div>
+      </div> */}
     </section>
   );
 };

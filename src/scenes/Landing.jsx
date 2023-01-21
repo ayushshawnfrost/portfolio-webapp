@@ -1,4 +1,5 @@
 import SocialMediaIcons from "../components/SocialMediaIcons";
+import profile from "../assets/pot.png"
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
@@ -17,11 +18,11 @@ const Landing = ({ setSelectedPage }) => {
           //   className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[400px]
           //   before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-full before:border-2 before:border-blue before:z-[-1]"
           // >
-            <img
-              alt="profile"
-              className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[300px] md:max-w-[300px]"
-              src="assets/pot.png"
-            />
+          <img
+            alt="profile"
+            className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[300px] md:max-w-[300px]"
+            src={profile}
+          />
           // </div>
         ) : (
           <img
@@ -56,7 +57,7 @@ const Landing = ({ setSelectedPage }) => {
           </p>
 
           <p className="mt-10 mb-7 text-sm text-center md:text-start">
-          I'm a full stack web developer based in Hayward, CA.
+            I'm a full stack web developer based in Hayward, CA.
           </p>
         </motion.div>
 
