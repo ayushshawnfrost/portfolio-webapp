@@ -84,14 +84,14 @@ const Projects = () => {
           >
             BEAUTIFUL USER INTERFACES
           </div> */}
-          <Project title="Get Your Jab" href="https://ayushshawnfrost.github.io/" desc="" img="1" />
-          <div className="ml-3 mt-5">
+          <Project title="Get Your Jab" href="https://ayushshawnfrost.github.io/GetYourJab_2022/" desc="" img="1" />
+          <div className="ml-3 mt-5 font-playfair">
             <p className="text-2xl font-playfair text-yellow">Get Your Jab</p>
             <li>Developed a client-side web application that gives information on Covid-19 vaccination centers and slots availability throughout India.</li>
             <li>Application’s front-end developed using React.js, Redux, and Sass and deployed on the web using GitHub Pages. The application consumes data from Co-WIN Public REST APIs owned and operated by India's Ministry of Health and Family Welfare.</li>
           </div>
           
-          <div className="ml-3 mt-5">
+          <div className="ml-3 mt-5 font-playfair">
             <p className="text-2xl font-playfair text-yellow">Covid-19 Dashboard (India)</p>
             <li>Covid-19 dashboard for India. Shows the number of Active Cases, Confirmed Cases, Deceased, Migrated, Recovered cases state wise.</li>
             <li>The application consumes data from Public APIs.</li>

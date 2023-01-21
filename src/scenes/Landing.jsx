@@ -1,5 +1,5 @@
 import SocialMediaIcons from "../components/SocialMediaIcons";
-import profile from "../assets/pot.png"
+import profile from "../assets/pot.jpg"
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
@@ -8,7 +8,7 @@ const Landing = ({ setSelectedPage }) => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
   return (
     <section
-      id="home"
+      id="about"
       className="md:flex md:justify-between md:items-center gap-16 md:h-full py-10"
     >
       {/* IMAGE SECTION */}
@@ -56,9 +56,10 @@ const Landing = ({ setSelectedPage }) => {
             </span>
           </p>
 
-          <p className="mt-10 mb-7 text-sm text-center md:text-start">
+          {/* <p className="mt-10 mb-7 text-sm text-center md:text-start font-playfair">
             I'm a full stack web developer based in Hayward, CA.
-          </p>
+          </p> */}
+          <p className="mt-10 mb-7 text-sm text-center md:text-start font-playfair">I am a skilled full-stack web developer, experienced with various JavaScript based frameworks and single page applications utilized in microservice-based architecture. Currently I am perusing <span className="text-yellow">master’s degree</span> in <span className="text-blue">Computer Science </span>from <span className="text-red">California State University, East Bay.</span>.</p>
         </motion.div>
 
         {/* CALL TO ACTIONS */}

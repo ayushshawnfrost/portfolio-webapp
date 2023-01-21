@@ -4,15 +4,15 @@ import DotGroup from "./scenes/DotGroup";
 import MySkills from "./scenes/MySkills";
 import LineGradient from "./components/LineGradient";
 import Projects from "./scenes/Projects";
-import Contact from "./scenes/Contact";
+import Experience from "./scenes/Experience";
 import Footer from "./scenes/Footer";
 import useMediaQuery from "./hooks/useMediaQuery";
 import { useEffect, useState } from "react";
-import Testimonials from "./scenes/Testimonials";
+// import Testimonials from "./scenes/Testimonials";
 import { motion } from "framer-motion";
 
 function App() {
-  const [selectedPage, setSelectedPage] = useState("home");
+  const [selectedPage, setSelectedPage] = useState("about");
   const [isTopOfPage, setIsTopOfPage] = useState(true);
   const isDesktop = useMediaQuery("(min-width: 1060px)");
 
@@ -20,7 +20,7 @@ function App() {
     const handleScroll = () => {
       if (window.scrollY === 0) {
         setIsTopOfPage(true);
-        setSelectedPage("home");
+        setSelectedPage("about");
       }
       if (window.scrollY !== 0) setIsTopOfPage(false);
     };
@@ -45,7 +45,7 @@ function App() {
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
-          onViewportEnter={() => setSelectedPage("home")}
+          onViewportEnter={() => setSelectedPage("about")}
         >
           <Landing setSelectedPage={setSelectedPage} />
         </motion.div>
@@ -85,9 +85,9 @@ function App() {
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
-          onViewportEnter={() => setSelectedPage("contact")}
+          onViewportEnter={() => setSelectedPage("experience")}
         >
-          <Contact />
+          <Experience />
         </motion.div>
       </div>
       <Footer />

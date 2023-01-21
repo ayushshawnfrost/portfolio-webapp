@@ -1,11 +1,11 @@
-import LineGradient from "../components/LineGradient";
-import { useForm } from "react-hook-form";
-import { motion } from "framer-motion";
-import { Route, Routes, Link, useNavigate, useLocation } from 'react-router-dom';
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+// import LineGradient from "../components/LineGradient";
+// import { useForm } from "react-hook-form";
+// import { motion } from "framer-motion";
+// import { Route, Routes, Link, useNavigate, useLocation } from 'react-router-dom';
+// import {
+//   createBrowserRouter,
+//   RouterProvider,
+// } from "react-router-dom";
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import React from "react";
@@ -13,7 +13,7 @@ import React from "react";
 const SenorSoftwareEngineer = () => {
 
   return (
-    <section id="contact" className="mt-3">
+    <section  className="mt-3 font-playfair">
       <p className="mt-1 mb-1 text-yellow text-2xl">Valuelabs LLP</p>
       <p className="mt-1 mb-2 text-red text-2xl">Senior Software Engineer</p>
       <li> developed UI components using Redux, Typescript, SASS, and drafted unit tests using Jest with 90% code coverage. Rest APIs written in.Net Core in accordance with the microservice architecture</li>
@@ -26,7 +26,7 @@ const SenorSoftwareEngineer = () => {
 const SoftwareEngineer = () => {
 
   return (
-    <section id="contact" className="mt-3">
+    <section  className="mt-3 font-playfair">
       <p className="mt-1 mb-1 text-yellow text-2xl">Valuelabs LLP</p>
       <p className="mt-1 mb-2 text-red text-2xl">Software Engineer</p>
       <li>worked on a web-based solution for report generation and visualization for auto body. My team was responsible for migrating the existing Angular front-end application into React.js</li>
@@ -39,7 +39,7 @@ const SoftwareEngineer = () => {
 const Intern = () => {
 
   return (
-    <section id="contact" className="mt-3">
+    <section  className="mt-3 font-playfair">
       <p className="mt-1 mb-1 text-yellow text-2xl">Valuelabs LLP</p>
       <p className="mt-1 mb-2 text-red text-2xl">Intern</p>
       <li> developed a web application concerned with enterprise customer due diligence solutions using Angular, HTML, and Angular Material</li>
@@ -64,7 +64,7 @@ const Intern = () => {
 
 
 
-const Contact = () => {
+const Experience = () => {
   const [index, setIndex] = React.useState(0);
   const handleChange = (event, newValue) => {
     setIndex(newValue);
@@ -72,7 +72,7 @@ const Contact = () => {
 
 
   return (
-    <section id="contact" className="contact py-48">
+    <section id="experience" className="experience py-48 ">
       {/* <div className="flex justify-center items-center dark:text-red w-full">
         <Link rel="noopener noreferrer" to="/1" style={{'textColor'}} className="px-5 py-1 border-b-2 dark:border-red-400 dark:text-red-400">Senior Software Engineer</Link>
         <Link rel="noopener noreferrer" to="/2" className="px-5 py-1 border-b-2 dark:border-gray-700">Software Engineer</Link>
@@ -99,4 +99,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Experience;
