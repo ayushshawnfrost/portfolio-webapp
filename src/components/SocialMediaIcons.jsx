@@ -1,6 +1,6 @@
 import github from "../assets/github.png";
-import linkedin from "../assets/instagram.png";
-import instagram from "../assets/linkedin.png";
+import linkedin from "../assets/linkedin.png";
+import instagram from "../assets/instagram.png";
 
 const SocialMediaIcons = () => {
   return (
